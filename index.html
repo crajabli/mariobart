@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>glTF Reader</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas> 
+  <audio src="Wii_Moo_Moo_Meadows_-_Mario_Kart_8_Deluxe_OST.mp3"></audio>
+  <audio src="collision.mp3" id="collide"></audio>
+  <audio src="scream.mp3" id="anvil"></audio>
+  <script type="module" src="/src/main.ts"></script>
+  <script>    
+    window.addEventListener("DOMContentLoaded", event => {
+      console.log("ahhh found");
+      const audio = document.querySelector("audio");
+      audio.volume = 1;
+      audio.play();
+    });
+  </script>
+</body>
+</html>
